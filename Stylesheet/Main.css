@@ -1,0 +1,32 @@
+html {
+    background-color: #000080;
+    display: inline-block;
+    color: white;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.button_1 {
+    height: 32px;
+    background: yellow;
+    border: none;
+    padding: 0px 20px 0px 20px;
+    color: red;
+}
+
+section h2{
+    font-weight: bold;
+    font-size: 23px;
+}
+
+form {
+    margin: auto;
+    padding-bottom: 3%;
+}

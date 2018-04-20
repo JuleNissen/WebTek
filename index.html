@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang = "nb">
+    <head>
+        <meta charset = "utf-8">
+        <title>First come first serve</title>
+        <link rel="stylesheet" type="text/css" href="Stylesheet/Main.css">
+
+    </head>
+    <body>
+        <header>
+            <h1><strong>Veien for en sterker nasjon!</strong></h1>
+        </header>
+
+        <section><h2>Registerings sjema for 'Det nødvendige parti'</h2>
+
+            <form method="post" onsubmit="return checkForm(this);">
+                <h3>Navn</h3>
+                <input type="hidden" style="display:none" disabled>
+
+                <input type="text"  placeholder="Må være et bra navn!" 
+                       id="name" autocomplete='name' >
+
+                <h3>Fødselsdato (dag,måned,år)</h3>
+                <input type="date" id="bday" onchange="submitBday()" >
+                <p id="age"></p>
+
+                <h3>Telefon nummer</h3>
+                <input type="tel"  maxlength="8" placeholder="Maks 8 tegn"
+                       id="phone" autocomplete="tel-national">
+
+                <h3>E-post adresse</h3>
+                <input type="email" name="eMail" placeholder="Gib email plox" 
+                       id="eMail" autocomplete="email">
+
+
+                <h3>Gjenta E-post</h3>
+                <input type="email" placeholder="Gib email again plox" 
+                       id="NeMail">
+
+                <h3>Velg din uniforms farge</h3>
+                <h5>Om du velger svart vil en tilfeldig farget uniform bli 
+                    tildelt.</h5>
+                <input type="color">
+
+                <p>
+                    <button class="button_1"> Send inn! </button>
+                </p> 
+            </form>
+        </section>
+
+        <footer>
+            <p>Nettsiden er laget av Jahn-Willy Nøstdahl. Innholdet er 
+                beskyttet i henhold til Norsk lov om opphavsrett, Åndsverkloven.
+                19.4.2018  </p>
+            <script src="Stylesheet/Script.js"></script>
+        </footer>
+    </body>
+</html>
